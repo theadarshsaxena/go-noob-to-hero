@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func getLongestSubarrayWithSumK(arr []int, k int) []int {
 	l, e1, e2, i, j := 0, 0, 0, 0, 0
 	for j<len(arr) {
@@ -33,7 +31,7 @@ func getSum(arr[] int, i, j int) int {
 	return sum
 }
 
-func main() {
-	arr := []int{2,3,5}
-	fmt.Println(getLongestSubarrayWithSumK(arr, 5))
-}
+// func main() {
+// 	arr := []int{2,3,5}
+// 	fmt.Println(getLongestSubarrayWithSumK(arr, 5))
+// }
