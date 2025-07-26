@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -29,7 +28,7 @@ func mergeIntervals(arr [][]int) [][]int {
 	return result
 }
 
-func main() {
-	arr := [][]int{{1,4},{0,4},{8,10},{15,18}}
-	fmt.Println(mergeIntervals(arr))
-}
+// func main() {
+// 	arr := [][]int{{1,4},{0,4},{8,10},{15,18}}
+// 	fmt.Println(mergeIntervals(arr))
+// }
