@@ -1,6 +1,4 @@
 package main
-
-import "fmt"
 func shipWithinDays(weights []int, days int) int {
     l, r:=0,0
 	for i := range weights {
@@ -40,8 +38,8 @@ func getDaysToLoad(weights []int, capacity int) int {
 	return days
 }
 
-func main() {
-	weights := []int{1,2,3,4,5,6,7,8,9,10}
-	days := 5
-	fmt.Println(shipWithinDays(weights, days))
-}
+// func main() {
+// 	weights := []int{1,2,3,4,5,6,7,8,9,10}
+// 	days := 5
+// 	fmt.Println(shipWithinDays(weights, days))
+// }
