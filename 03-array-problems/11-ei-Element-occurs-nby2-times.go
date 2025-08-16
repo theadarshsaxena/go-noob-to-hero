@@ -1,7 +1,7 @@
 package main
 
 // Element that occurs more than N/2 times
-// ⚡ Boyer-Moore Voting Algorithm — THE Genius Intuition
+// * ⚡ Boyer-Moore Voting Algorithm — THE Genius Intuition
 
 // We don’t need to count everyone. Just the one that survives opposition.
 // 🤖 Mental Model:

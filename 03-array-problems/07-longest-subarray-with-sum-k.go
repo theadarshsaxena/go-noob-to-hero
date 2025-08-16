@@ -2,6 +2,14 @@ package main
 
 func getLongestSubarrayWithSumK(arr []int, k int) []int {
 	l, e1, e2, i, j := 0, 0, 0, 0, 0
+	getSum := func (arr[] int, i, j int) int {
+		sum:=0
+		for i<=j{
+			sum=sum+arr[i]
+			i++
+		}
+		return sum
+	}
 	for j<len(arr) {
 		if getSum(arr, i, j) == k {
 			if l < (j-i+1) {
@@ -20,15 +28,6 @@ func getLongestSubarrayWithSumK(arr []int, k int) []int {
 	resultArr := make([]int, 0, e2-e1+1)
 	resultArr = append(resultArr, arr[e1:e2+1]...)
 	return resultArr
-}
-
-func getSum(arr[] int, i, j int) int {
-	sum:=0
-	for i<=j{
-		sum=sum+arr[i]
-		i++
-	}
-	return sum
 }
 
 // func main() {

@@ -1,11 +1,23 @@
 package main
 
-// Rearrange Array Elements by Sign
-// There’s an array ‘A’ of size ‘N’ with an equal number of positive and negative elements.
-// Without altering the relative order of positive and negative elements, you must return an array of alternately positive and negative values.
+// * Rearrange Array Elements by Sign
+// * There’s an array ‘A’ of size ‘N’ with an equal number of positive and negative elements.
+// * Without altering the relative order of positive and negative elements, you must return an array of alternately positive and negative values.
+
+/*
+Intuition for O(1) Space Solution:
+- The idea is to rearrange the array in-place so that positive and negative numbers alternate, starting with a positive.
+- For each index, check if the sign matches the expected (even index: positive, odd index: negative).
+- If not, find the next element with the required sign and shift elements to place it at the current index, maintaining relative order.
+- This uses no extra space but involves shifting elements, leading to higher time complexity.
+
+Intuition for O(n) Space Solution:
+- Separate all positive and negative numbers into two new arrays, preserving their original order.
+- Then, merge them back into the original array by alternating elements from the positive and negative arrays.
+- This approach uses extra space but is faster since it avoids shifting elements.
+*/
 
 // Note: Start the array with positive elements.
-
 // Note: Following commented code is having O(1) space complexity
 // func arrangePosNeg(arr []int) {
 // 	for i:=0; i<len(arr); i++{
@@ -62,7 +74,7 @@ func arrangePosNeg(arr []int) {
 	} else {
 		sizeOfPos = len(arr)/2+1
 	}
-	narr := make([]int, len(arr)/2, len(arr)/2)
+	narr := make([]int, len(arr)/2)
 	parr := make([]int, sizeOfPos)
 	n,p:=0,0
 	for i:=0; i<len(arr); i++ {

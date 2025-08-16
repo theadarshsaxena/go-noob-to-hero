@@ -1,8 +1,8 @@
 package main
 
-// find the maximum subarray sum in array
+// * find the maximum subarray sum in array
 
-// ⚡ Kadane’s Intuition — The Golden Insight
+// * ⚡ Kadane’s Intuition — The Golden Insight
 
 // Here’s the mental model you need to train into your brain:
 //     “If a subarray is hurting me (i.e. total sum becomes negative), I should ditch it and start fresh from the next element.”

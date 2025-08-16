@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 Problem: Count the number of subarrays with given XOR K
 
@@ -41,8 +39,8 @@ func countSubarrayWithXorK(arr []int, k int) int {
 	return result
 }
 
-func main() {
-	arr := []int{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
-	k := 1
-	fmt.Println(countSubarrayWithXorK(arr, k))
-}
+// func main() {
+// 	arr := []int{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+// 	k := 1
+// 	fmt.Println(countSubarrayWithXorK(arr, k))
+// }

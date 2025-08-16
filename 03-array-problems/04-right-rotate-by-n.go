@@ -3,6 +3,9 @@ package main
 func rightRotateByN(nums []int, n int) {
 	counter := 0
 	numsLen := len(nums)
+	positiveMod := func (a, b int) int {
+		return (a % b + b) % b
+	}
 	if (numsLen == n) {
 		return
 	}
@@ -23,10 +26,6 @@ func rightRotateByN(nums []int, n int) {
 			break
 		}
 	}
-}
-
-func positiveMod(a, b int) int {
-    return (a % b + b) % b
 }
 
 // func main() {
